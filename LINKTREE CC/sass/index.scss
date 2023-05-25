@@ -10,110 +10,6 @@ $c-sec: black;
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 1366px) {
-    .tudo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        #esq {
-            height: 100vh;
-            background-color: #191919;
-            width: 50%;
-            color: white;
-            font-family: $font;
-            #img {
-                margin: auto;
-                text-align: center;
-                padding: 2rem 0rem 2rem 0rem;
-                img {
-                    border-radius: 100px;
-                }
-                p {
-                    padding-top: 1rem;
-                }
-            }
-    
-            #msg {
-                width: 90%;
-                margin: auto;
-                text-align: center;
-                font-size: 15px;
-                padding-bottom: 1rem;
-            }
-    
-            #redes {
-                a {
-                    text-decoration: none;
-                    width: 100%;
-                    margin: auto;
-                    text-align: center;
-                    p {
-                        padding: 1.5rem;
-                        margin: 1rem;
-                        font-weight: bold;
-                        border: 2px solid grey;
-                        color: white;
-                        transition: 0.3s;
-                        &:hover {
-                            transform: scale(1.05);
-                            color: grey;
-                        }
-                    }
-                }
-            }
-        }
-        #dir {
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/logo-loja.jpg);
-            background-size: cover;
-            #txt {
-                margin: auto;
-                text-align: center;
-                color: white;
-                font-family: $font;
-                padding-top: 2rem;
-            }
-    
-            #cards {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 1rem;
-                width: 100%;
-                #card {
-                    border: 1px solid white;
-                    padding: 3rem;
-                    margin: 1rem;
-                    border-radius: 50px;
-                    text-align: center;
-                    width: 25%;
-                    /* From https://css.glass */
-                    background: rgba(78, 78, 78, 0.35);
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(8.9px);
-                    -webkit-backdrop-filter: blur(8.9px);
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    transition: 0.3s;
-                    &:hover {
-                        transform: scale(1.05);
-                        background-color: #006aed21;
-                    }
-                    a {
-                        text-decoration: none;
-                        p {
-                            color: white;
-                            font-family: $font;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 1920px) {
     .tudo {
         display: flex;
@@ -198,6 +94,110 @@ $c-sec: black;
                     border-radius: 50px;
                     text-align: center;
                     width: 45%;
+                    /* From https://css.glass */
+                    background: rgba(78, 78, 78, 0.35);
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(8.9px);
+                    -webkit-backdrop-filter: blur(8.9px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    transition: 0.3s;
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: #006aed21;
+                    }
+                    a {
+                        text-decoration: none;
+                        p {
+                            color: white;
+                            font-family: $font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .tudo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        #esq {
+            height: 100vh;
+            background-color: #191919;
+            width: 50%;
+            color: white;
+            font-family: $font;
+            #img {
+                margin: auto;
+                text-align: center;
+                padding: 2rem 0rem 2rem 0rem;
+                img {
+                    border-radius: 100px;
+                }
+                p {
+                    padding-top: 1rem;
+                }
+            }
+    
+            #msg {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+                font-size: 15px;
+                padding-bottom: 1rem;
+            }
+    
+            #redes {
+                a {
+                    text-decoration: none;
+                    width: 100%;
+                    margin: auto;
+                    text-align: center;
+                    p {
+                        padding: 1.5rem;
+                        margin: 1rem;
+                        font-weight: bold;
+                        border: 2px solid grey;
+                        color: white;
+                        transition: 0.3s;
+                        &:hover {
+                            transform: scale(1.05);
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+        #dir {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/logo-loja.jpg);
+            background-size: cover;
+            #txt {
+                margin: auto;
+                text-align: center;
+                color: white;
+                font-family: $font;
+                padding-top: 2rem;
+            }
+    
+            #cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem;
+                width: 100%;
+                #card {
+                    border: 1px solid white;
+                    padding: 3rem;
+                    margin: 1rem;
+                    border-radius: 50px;
+                    text-align: center;
+                    width: 25%;
                     /* From https://css.glass */
                     background: rgba(78, 78, 78, 0.35);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
