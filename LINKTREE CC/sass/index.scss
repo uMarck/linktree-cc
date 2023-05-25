@@ -280,3 +280,57 @@ $c-sec: black;
         }
     }
 }
+
+@media screen and (max-width: 390px) {
+    .tudo {
+        #esq {
+                #img {
+                padding-top: 2.5rem;
+            }
+        }
+
+        #dir {
+            #txt {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tudo {
+        #esq {
+            height: auto;
+            #img {
+                padding-top: 1.5rem;
+                img {
+                    width: 100px;
+                }
+                p {
+                    font-size: 20px;
+                    padding-bottom: 0;
+                }
+            }
+            #msg {
+                padding-top: 0;
+                padding-bottom: 1rem;
+                width: 95%;
+            }
+            #redes {
+                a {
+                    p {
+                        padding: 0.69rem
+                    }
+                }
+            }
+            #arrow {
+                img {
+                    padding-top: 0;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -258,4 +258,39 @@
     padding: 2rem;
     margin: 1rem 0 1rem 0;
   }
+}
+@media screen and (max-width: 390px) {
+  .tudo #esq #img {
+    padding-top: 2.5rem;
+  }
+  .tudo #dir #txt h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tudo #esq {
+    height: auto;
+  }
+  .tudo #esq #img {
+    padding-top: 1.5rem;
+  }
+  .tudo #esq #img img {
+    width: 100px;
+  }
+  .tudo #esq #img p {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+  .tudo #esq #msg {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    width: 95%;
+  }
+  .tudo #esq #redes a p {
+    padding: 0.69rem;
+  }
+  .tudo #esq #arrow img {
+    padding-top: 0;
+    margin: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
