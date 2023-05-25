@@ -5,119 +5,203 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1920px) {
-  .container {
-    height: 100vh;
-    width: 100%;
-    background-color: #292929;
-    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+@media screen and (max-width: 1366px) {
+  .tudo {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
-  .container #side {
+  .tudo #esq {
+    height: 100vh;
+    background-color: #191919;
+    width: 50%;
+    color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+  }
+  .tudo #esq #img {
     margin: auto;
     text-align: center;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: #414141;
-    width: 25%;
+    padding: 2rem 0rem 2rem 0rem;
   }
-  .container #side #img {
-    padding-top: 6.6rem;
-  }
-  .container #side #img img {
+  .tudo #esq #img img {
     border-radius: 100px;
-    margin-bottom: 2.5rem;
   }
-  .container #side #msg {
+  .tudo #esq #img p {
+    padding-top: 1rem;
+  }
+  .tudo #esq #msg {
     width: 90%;
     margin: auto;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 1rem;
   }
-  .container #side #redes {
-    margin: auto;
-    width: 90%;
-    height: 50%;
-  }
-  .container #side #redes a {
+  .tudo #esq #redes a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin: 1rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
   }
-  .container #side #redes a p {
-    border: 2px solid #fff;
-    padding: 1rem;
-    background-color: rgb(114, 114, 114);
+  .tudo #esq #redes a p {
+    padding: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    border: 2px solid grey;
+    color: white;
     transition: 0.3s;
   }
-  .container #side #redes a p:hover {
+  .tudo #esq #redes a p:hover {
     transform: scale(1.05);
+    color: grey;
   }
-  .container #consultores {
-    position: fixed;
-    left: 385px;
-    top: 150px;
+  .tudo #dir {
     width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/logo-loja.jpg);
+    background-size: cover;
   }
-  .container #consultores h2 {
-    position: absolute;
-    bottom: 500px;
-    left: 285px;
-    color: white;
+  .tudo #dir #txt {
     margin: auto;
     text-align: center;
-    font-size: 55px;
+    color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+    padding-top: 2rem;
   }
-  .container #consultores #cards {
+  .tudo #dir #cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+  }
+  .tudo #dir #cards #card {
+    border: 1px solid white;
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 50px;
+    text-align: center;
+    width: 25%;
+    /* From https://css.glass */
+    background: rgba(78, 78, 78, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+  .tudo #dir #cards #card:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 106, 237, 0.1294117647);
+  }
+  .tudo #dir #cards #card a {
+    text-decoration: none;
+  }
+  .tudo #dir #cards #card a p {
+    color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .tudo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 85%;
+    justify-content: center;
   }
-  .container #consultores #cards #card {
+  .tudo #esq {
+    height: 100vh;
     background-color: #191919;
-    padding: 5rem;
-    margin: 1rem;
-    width: 15%;
-    border-radius: 55px;
-    transition: 0.2s;
-  }
-  .container #consultores #cards #card:hover {
-    transform: scale(1.05);
-  }
-  .container #consultores #cards #card p {
-    text-align: center;
-  }
-  .container #consultores #cards #card a {
-    text-decoration: none;
-    color: white;
-  }
-  .container #footer {
-    position: fixed;
-    left: 1055px;
-    bottom: 51px;
     width: 50%;
-    display: flex;
-    flex-direction: row;
-  }
-  .container #footer a {
-    width: 100%;
-    text-decoration: none;
-  }
-  .container #footer a #sac {
-    width: 300px;
-    text-decoration: none;
     color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+  }
+  .tudo #esq #img {
+    margin: auto;
     text-align: center;
-    border: 2px solid white;
+    padding: 10rem 0rem 2rem 0rem;
+  }
+  .tudo #esq #img img {
+    border-radius: 500px;
+    width: 250px;
+  }
+  .tudo #esq #img p {
+    padding-top: 1rem;
+    font-size: 25px;
+  }
+  .tudo #esq #msg {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .tudo #esq #redes a {
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .tudo #esq #redes a p {
+    padding: 1.5rem;
+    margin: 1rem 2rem 2rem 2rem;
+    font-weight: bold;
+    border: 2px solid grey;
+    color: white;
+    transition: 0.3s;
+  }
+  .tudo #esq #redes a p:hover {
+    transform: scale(1.05);
+    color: grey;
+  }
+  .tudo #dir {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/logo-loja.jpg);
+    background-size: cover;
+  }
+  .tudo #dir #txt {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
+    padding-top: 5.5rem;
+    font-size: 30px;
+  }
+  .tudo #dir #cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem 2rem 3rem 2rem;
+    width: 100%;
+  }
+  .tudo #dir #cards #card {
+    border: 1px solid white;
+    padding: 3rem;
+    margin: 1rem 2rem 2rem 1.8rem;
+    border-radius: 50px;
+    text-align: center;
+    width: 45%;
+    /* From https://css.glass */
+    background: rgba(78, 78, 78, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+  .tudo #dir #cards #card:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 106, 237, 0.1294117647);
+  }
+  .tudo #dir #cards #card a {
+    text-decoration: none;
+  }
+  .tudo #dir #cards #card a p {
+    color: white;
+    font-family: "Montserrat", "Poppins", "Oswald", Tahoma, Verdana;
   }
 }/*# sourceMappingURL=index.css.map */
