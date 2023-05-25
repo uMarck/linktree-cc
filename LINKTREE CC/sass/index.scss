@@ -17,6 +17,9 @@ $c-sec: black;
         align-items: center;
         justify-content: center;
         #esq {
+            #arrow {
+                display: none;
+            }
             height: 100vh;
             background-color: #191919;
             width: 50%;
@@ -25,7 +28,7 @@ $c-sec: black;
             #img {
                 margin: auto;
                 text-align: center;
-                padding: 10rem 0rem 2rem 0rem;
+                padding: 5rem 0rem 2rem 0rem;
                 img {
                     border-radius:500px;
                     width: 250px;
@@ -76,7 +79,8 @@ $c-sec: black;
                 text-align: center;
                 color: white;
                 font-family: $font;
-                padding-top: 5.5rem;
+                padding-top: 3rem;
+                filter: drop-shadow(1px 2px 25px black);
                 font-size: 30px;
             }
     
@@ -90,10 +94,10 @@ $c-sec: black;
                 #card {
                     border: 1px solid white;
                     padding: 3rem;
-                    margin: 1rem 2rem 2rem 1.8rem;
+                    margin: 0rem 2rem 2rem 1.8rem;
                     border-radius: 50px;
                     text-align: center;
-                    width: 45%;
+                    width: 35%;
                     /* From https://css.glass */
                     background: rgba(78, 78, 78, 0.35);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -125,6 +129,9 @@ $c-sec: black;
         align-items: center;
         justify-content: center;
         #esq {
+            #arrow {
+                display: none;
+            }
             height: 100vh;
             background-color: #191919;
             width: 50%;
@@ -133,9 +140,10 @@ $c-sec: black;
             #img {
                 margin: auto;
                 text-align: center;
-                padding: 2rem 0rem 2rem 0rem;
+                padding: 5rem 0rem 2rem 0rem;
                 img {
-                    border-radius: 100px;
+                    border-radius:500px;
+                    width: 150px;
                 }
                 p {
                     padding-top: 1rem;
@@ -181,7 +189,10 @@ $c-sec: black;
                 text-align: center;
                 color: white;
                 font-family: $font;
-                padding-top: 2rem;
+                padding-top: 4rem 1rem 4rem 1rem;
+                h1 {
+                    font-size: 45px;
+                }
             }
     
             #cards {
@@ -216,6 +227,54 @@ $c-sec: black;
                             font-family: $font;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .tudo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        #esq {
+            #arrow {
+                display: grid;
+                place-items: center;
+                img {
+                    padding-top: 2rem;
+                    width: 100px;
+                }
+            }
+            width: 100%;
+            #img {
+                padding-top: 7.5rem;
+            }
+        }
+
+        #dir {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            #txt {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+
+            #cards {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+                height: auto;
+                #card {
+                    width: 100%;
+                    padding: 2rem;
+                    margin: 1rem 0 1rem 0;
                 }
             }
         }
